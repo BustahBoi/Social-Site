@@ -1,0 +1,42 @@
+<div class="container">
+<br>
+<div class ="row">
+    <div class="col-8">
+        <h2>##privatemessages##</h2>
+
+    </div>
+    <div class="col-2 text-right">
+        ##type##
+    </div>
+
+
+</div>
+
+<hr>
+
+||messageTableMain||
+<hr>
+<form action='.\main.php?page=message&type=sent' method='POST'>
+    <div class='form-group row'>
+        <label for='username' class='col-2 col-form-label'>##username##</label>
+        <div class='col-10'>
+            <input class='form-control' type='text' id='username' name='message-user' required>
+        </div>
+    </div>
+    <div class='form-group row'>
+        <label for='title' class='col-2 col-form-label'>##messagetitle##</label>
+        <div class='col-10'>
+            <input class='form-control' type='text' id='title' name='message-title' required>
+        </div>
+    </div>
+    <div class='form-group row'>
+        <label for='content' class='col-2 col-form-label'>##messagecontent##</label>
+        <div class='col-10'>
+            <textarea class='form-control' type='textarea' id='content' name='message-content' rows='5' required></textarea>
+        </div>
+    </div>
+    <div class='col-lg-6 text-center'>
+        <button type='submit' class='btn btn-primary col-lg-4'>##submit##</button><br>
+    </div>
+</form>
+</div>

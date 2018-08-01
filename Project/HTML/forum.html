@@ -1,0 +1,30 @@
+<div class="container">
+    <h4>##recent##</h4>
+    ||forumTableAlt||
+</div>
+<div class="container">
+        <h4>##topics##</h4>
+        ||forumTableMain||
+</div>
+<div class="container">
+    <h4>##createtopic##</h4>
+    <form action=".\main.php?page=forum" method="POST">
+        <div class="form-group row">
+            <label for="title" class="col-2 col-form-label">##topictitle##</label>
+            <div class="col-10">
+                <input class="form-control" type="text" id="title" name="topic-title">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="topic-content" class="col-2 col-form-label">##topiccontent##</label>
+            <div class="col-10">
+                <textarea class="form-control" type="textarea" id="topic-content" name="topic-content" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center">
+            <button type="submit" class="btn btn-primary col-lg-4">##submit##</button><br>
+        </div>
+    </form>
+</div>
+
+
